@@ -1,0 +1,28 @@
+{
+  "name": "blanditiiscorrupti",
+  "description": "A PNG decoder in JavaScript",
+  "version": "1.0.0",
+  "author": "ValentinPouros",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeamusAbbott/blanditiiscorrupti.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SeamusAbbott/blanditiiscorrupti.git/issues"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4"
+  },
+  "main": "png-node.js",
+  "engine": [
+    "node >= v0.6.0"
+  ],
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test/patch-canvas.js",
+      "<rootDir>/zlib.js",
+      "<rootDir>/png.js"
+    ]
+  }
+}
